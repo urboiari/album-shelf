@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Glosa Roman';
+  src: url('./fonts/glosa-roman.ttf');
+}
+
+@font-face {
+  font-family: 'Korbin';
+  src: url('./fonts/korbin-medium.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 65px;
+  font-family: 'Glosa Roman', serif;
+  letter-spacing: 20px;
+  font-weight: 200;
+}
+
+h6 {
+  font-size: 36px;
+  font-family: 'Glosa Roman', serif;
+  font-weight: 200;
+}
+
+p {
+  font-size: 23px;
+  font-family: 'Korbin', sans-serif;
+}
+
+.section-wrapper {
+  width: 940px;
+}
+
+.section-wrapper > * {
+  margin: 40px 0;
+}
+
+.section-wrapper .textblock > p {
+  margin: 15px 0 0;
+}
+
+.shelf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.album {
+  width: 80px;
+  height: 460px;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#cardboard-city {
+  background-image: url('./images/cardboard-city.jpg');
+}
+
+#gorilla {
+  background-image: url('./images/gorilla.jpg');
+}
+
+#hdyfagm {
+  background-image: url('./images/hdyfagm.jpeg');
+}
+
+#mss {
+  background-image: url('./images/mss.jpg');
+}
+
+#raf {
+  background-image: url('./images/raf.jpg');
+}
+
+#sita {
+  background-image: url('./images/sita.jpg');
+}
+
+#blonde {
+  background-image: url('./images/blonde.jpg');
+}
+
+.selected {
+  width: 460px;
+}
+/*# sourceMappingURL=main.css.map */
