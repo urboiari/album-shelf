@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Glosa Roman';
-  src: url('./fonts/glosa-roman.ttf');
+  src: url("./fonts/glosa-roman.ttf");
 }
 
 @font-face {
   font-family: 'Korbin';
-  src: url('./fonts/korbin-medium.ttf');
+  src: url("./fonts/korbin-medium.ttf");
 }
 
 * {
@@ -19,11 +19,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
 }
 
@@ -53,25 +53,29 @@ p {
   margin: 40px 0;
 }
 
-.section-wrapper .textblock > p {
-  margin: 15px 0 0;
-}
-
 .shelf {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row;
-  flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.textblock {
+  display: none;
+}
+
+.textblock p {
+  margin: 15px 0 0;
 }
 
 .album {
   width: 80px;
-  height: 460px;
+  height: 440px;
   background-size: cover;
   cursor: pointer;
   -webkit-transition: all 0.5s;
@@ -79,34 +83,39 @@ p {
 }
 
 #cardboard-city {
-  background-image: url('./images/cardboard-city.jpg');
+  background-image: url("./images/cardboard-city.jpg");
 }
 
 #gorilla {
-  background-image: url('./images/gorilla.jpg');
+  background-image: url("./images/gorilla.jpg");
 }
 
 #hdyfagm {
-  background-image: url('./images/hdyfagm.jpeg');
+  background-image: url("./images/hdyfagm.jpeg");
 }
 
 #mss {
-  background-image: url('./images/mss.jpg');
+  background-image: url("./images/mss.jpg");
 }
 
 #raf {
-  background-image: url('./images/raf.jpg');
+  background-image: url("./images/raf.jpg");
 }
 
 #sita {
-  background-image: url('./images/sita.jpg');
+  background-image: url("./images/sita.jpg");
 }
 
 #blonde {
-  background-image: url('./images/blonde.jpg');
+  background-image: url("./images/blonde.jpg");
 }
 
-.selected {
-  width: 460px;
+.selected-album {
+  width: 440px;
+  margin: 0 10px;
+}
+
+.selected-text {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

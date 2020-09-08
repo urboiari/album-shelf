@@ -1,18 +1,20 @@
 let shelf = document.querySelector('.shelf');
 let albums = shelf.getElementsByTagName('DIV');
+let textblocks = document.querySelector('.textblock-wrapper');
 
-// for (let album of albums) {
-//   album.addEventListener('mouseover', () => albumFocus(album));
-// }
+function albumFocus(album) {
+  let selectedId = album.id;
+  document.querySelector('.selected-album').classList.toggle('selected-album');
+  album.classList.toggle('selected-album');
 
-// for (let album of albums) {
-//   album.addEventListener('mouseout', () => albumUnfocus(album));
-// }
+  document.querySelector('.selected-text').classList.remove('selected-text');
+  document.querySelector(`#${selectedId}-text`).classList.add('selected-text');
+}
 
-// function albumFocus(album) {
-//   album.style.setProperty('z-index', '100');
-// }
+function setupHover() {
+  for (let album of albums) {
+    album.addEventListener('mouseover', () => albumFocus(album));
+  }
+}
 
-// function albumUnfocus(album) {
-//   album.style.setProperty('z-index', '1');
-// }
+setupHover();
