@@ -34,7 +34,7 @@ h2 {
   font-weight: 200;
 }
 
-h6 {
+h5 {
   font-size: 36px;
   font-family: 'Glosa Roman', serif;
   font-weight: 200;
@@ -51,6 +51,10 @@ p {
 
 .section-wrapper > * {
   margin: 40px 0;
+}
+
+.textblock-wrapper {
+  margin-bottom: 10px;
 }
 
 .shelf {
@@ -70,7 +74,7 @@ p {
 }
 
 .textblock p {
-  margin: 15px 0 0;
+  margin: 20px 0 0;
 }
 
 .album {
@@ -117,5 +121,49 @@ p {
 
 .selected-text {
   display: block;
+}
+
+.listen-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin: 20px auto 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.listen-icons .icon {
+  background-size: cover;
+  margin: 0 10px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+#spotify {
+  background-image: url("./icons/spotify.svg");
+}
+
+#apple-music {
+  background-image: url("./icons/apple-music.svg");
+}
+
+#soundcloud {
+  background-image: url("./icons/soundcloud.svg");
+}
+
+.transparent50 {
+  opacity: 0.5;
+}
+
+.opaque {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
